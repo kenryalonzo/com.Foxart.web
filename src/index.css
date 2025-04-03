@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800;900&display=swap')
+layer(base);
+
+@import 'tailwindcss';
+
+@config '../tailwind.config.js';
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@utility font-sora {
+  font-family: var(--font-sora);
+}
+
+@layer utilities {
+  :root {
+    --font-sora: 'Sora', sans-serif;
+    color-scheme: dark; /* Using the default dark mode. */
+  }
+
+  * {
+    scroll-behavior: smooth; /* Scrolling towards a target element is smooth and progressive. */
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-n-9 text-n-1 text-base;
+    font-family: var(--font-sora);
+  }
+}
+
+a.button:hover {
+  @apply no-underline;
+}
+
+a:hover {
+  @apply underline text-p-3 animate;
+}
