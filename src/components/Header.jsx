@@ -3,7 +3,7 @@ import { Container } from "./Container"
 import { ButtonContent } from "./ButtonContent"
 import { ElipseBlueBlur } from "./theme/Header"
 
-export const Header = () => {
+const Header = () => {
   return (
     <div className='border-b border-x-stroke-1'>
       <Container>
@@ -17,4 +17,6 @@ export const Header = () => {
       </Container>
     </div>
   )
-}
+}   
+
+export default Header
