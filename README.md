@@ -7,7 +7,6 @@ Parfait pour accélérer le développement de vos projets et suivre nos tutoriel
 
 ## 🚀 Fonctionnalités
 
-- ✅ Architecture Next.js 14 prête pour production
 - 🎨 Système de design avec Tailwind CSS configuré
 - 🧩 Intégration de composants UI réutilisables
 - ⚡ Optimisation Vite + Turbopack
