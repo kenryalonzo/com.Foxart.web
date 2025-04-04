@@ -1,8 +1,7 @@
 import {logoApp} from "../assets/index"
-
-import React from 'react'
 import { Container } from "./Container"
 import { ButtonContent } from "./ButtonContent"
+import { ElipseBlueBlur } from "./theme/Header"
 
 export const Header = () => {
   return (
@@ -13,8 +12,8 @@ export const Header = () => {
           <ButtonContent theme="primary" href="/#">
             login
           </ButtonContent>
-
         </div>
+        <ElipseBlueBlur />
       </Container>
     </div>
   )
