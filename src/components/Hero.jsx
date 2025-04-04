@@ -1,6 +1,7 @@
 import { uiInterface } from "../assets"
 import { ButtonContent } from "./ButtonContent"
 import { Container } from "./Container"
+import Grid from "./theme/Hero"
 
 const Hero = () => {
   return (
@@ -25,6 +26,7 @@ const Hero = () => {
         </div>
         <img src={uiInterface} alt="Ui Interface illustration" />
       </Container>
+      <Grid />
     </div>
   )
 }
