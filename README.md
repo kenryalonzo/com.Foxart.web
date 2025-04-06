@@ -1,7 +1,5 @@
 # 🦊 Foxart Kit - Starter Kit Professionnel
 
-![Bannière Foxart](https://via.placeholder.com/1200x400/070E27/FFFFFF?text=Foxart+Starter+Kit) 
-
 Un kit de démarrage complet avec architecture moderne, outils préconfigurés et bonnes pratiques intégrées.  
 Parfait pour accélérer le développement de vos projets et suivre nos tutoriels YouTube.
 
