@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "foxart-93dca",
     "public": "dist",
     "ignore": [
       "firebase.json",

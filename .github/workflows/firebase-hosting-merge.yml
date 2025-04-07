@@ -41,4 +41,3 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FOXART_93DCA }}
           channelId: live
           projectId: foxart-93dca
-          target: 'site' # Optionnel : si vous avez plusieurs sites Firebase
