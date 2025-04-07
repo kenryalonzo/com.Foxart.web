@@ -2,19 +2,43 @@
 # https://github.com/firebase/firebase-tools
 
 name: Deploy to Firebase Hosting on merge
+
 on:
   push:
     branches:
       - main
+
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: "npm run build  "
+
+      # Configuration de Node.js (version synchronisée avec votre environnement local)
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '22.11.0' # Version exacte pour la cohérence
+          cache: 'npm'
+          check-latest: true # S'assure d'utiliser la dernière patch version
+
+      # Installation optimisée des dépendances
+      - name: Install dependencies
+        run: |
+          npm ci --no-audit # Désactive les audits pour accélérer le CI
+          npm cache verify # Nettoyage supplémentaire du cache
+
+      # Build avec variables d'environnement
+      - name: Build project
+        run: npm run build
+        env:
+          NODE_ENV: production # Force l'environnement de production
+          CI: true # Optimise les logs pour CI
+
+      # Déploiement Firebase
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FOXART_93DCA }}
           channelId: live
           projectId: foxart-93dca
+          target: 'site' # Optionnel : si vous avez plusieurs sites Firebase
