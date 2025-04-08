@@ -1,0 +1,81 @@
+{
+    "name": "Foxart App",
+    "short_name": "foxart",
+    "theme_color": "#00308F",
+    "background_color": "#070E27",
+    "display": "standalone",
+    "orientation": "portrait",
+    "description": "Foxart is a web application that allows you to create and manage your own widgets.",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+      {
+        "src": "/manifest-icon-192.maskable.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "/manifest-icon-192.maskable.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "maskable"
+      },
+      {
+        "src": "/manifest-icon-512.maskable.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "/manifest-icon-512.maskable.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "/desktop1.png",
+        "sizes": "1347x646",
+        "type": "image/png",
+        "form_factor": "wide",
+        "label": "wonder widgets"
+      },
+      {
+          "src": "/desktop2.png",
+          "sizes": "1347x646",
+          "type": "image/png",
+          "form_factor": "wide",
+          "label": "wonder widgets"
+      },
+      {
+          "src": "/desktop3.png",
+          "sizes": "1347x646",
+          "type": "image/png",
+          "form_factor": "wide",
+          "label": "wonder widgets"
+      },
+      {
+          "src": "/mobile1.png",
+          "sizes": "286x581",
+          "type": "image/png",
+          "form_factor": "narrow",
+          "label": "wonder widgets"
+      },
+      {
+          "src": "/mobile2.png",
+          "sizes": "286x581",
+          "type": "image/png",
+          "form_factor": "narrow",
+          "label": "wonder widgets"
+      },
+      {
+          "src": "/mobile3.png",
+          "sizes": "286x581",
+          "type": "image/png",
+          "form_factor": "narrow",
+          "label": "wonder widgets"
+      }
+    ]
+  }
